@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Schedule</title>
+
+<!-- Linking sheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+<body>
+    
+    <div class="banner">
+        <div id="topBanner">
+            <h1>Train Schedule on Island of Sodor</h1>
+            <!-- https://en.wikipedia.org/wiki/Sodor_(fictional_island) -->
+            <p>Knock and Cronk, Nagh Beurla</p>
+        </div>
+    </div>
+
+    <div class="container" id= "currentTrain" style="padding: 1em;">
+        <table id="cT">Current Train Schedule
+            <thead>
+                <tr>
+                    <th id="firstTrain">First Daily Train</th>
+                    <th id="trainStatName">Train Name</th>
+                    <th id="trainStatDest">Destination</th>
+                    <th id="minStatFreq">Frequency (min)</th>
+                    <th id="nextStatArriv">Next Arrival</th>
+                    <th id="minStatAway">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- <hr> 
+        <div class="row">
+            <div id="trainData">
+                <div class="col-sm-2" id="nextTrain"></div>
+                <div class="col-sm-2" id="newLocation"></div>
+                <div class="col-sm-2" id="newFreq"></div>
+                <div class="col-sm-2" id="catchTrain"></div>
+                <div class="col-sm-2" id="tMinutesTillTrain"></div>
+                <hr>
+            </div>
+        </div> -->
+
+    </div>
+
+      </script>
+
+    </div>
+
+    <div class="container" style="padding: 0;">
+        <div class ="addTrain"> Add Tain
+            <form id="formDataMang">
+                <div class="form-group">
+                    <label for="formTrainName">Train Name</label>
+                    <input type="text" class="form-control" id="formName" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formTrainDest">Destination</label>
+                    <input type="text" class="form-control" id="formDest" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formTrainTime">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control" id="formTime" placeholder="HH:mm">
+                </div>
+                <div class="form-group">
+                    <label for="formTrainFreq">Frequency</label>
+                    <input type="text" class="form-control" id="formFreq" placeholder="mm">
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn-primary" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- ajax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- JS Bootstrap 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+-->
+<!-- JS -->    
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

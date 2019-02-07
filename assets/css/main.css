@@ -1,0 +1,39 @@
+.banner {
+    background-color: rgb(129, 2, 2);
+    width: 100%;
+    color: blanchedalmond;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+}
+.form-group {
+    text-align: left;
+    font-size: 1em;
+    color: #777777;
+}
+
+.container {
+    border: solid;
+    border-color: #777777;
+    margin-top: 1em;
+}
+
+.addTrain {
+    background-color: #777777;
+    width: 100%;
+    color: blanchedalmond
+}
+
+#formDataMang {
+    background-color: white;
+    padding: .5em;
+}
+
+.button {
+    margin-bottom: .3em;
+}
+
+.trainData {
+    background-color: white;
+    float: left;
+}
